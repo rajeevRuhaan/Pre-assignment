@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/button";
+import Button from "react-bootstrap/Button";
 
 const UserCard = ({ users = [] }) => {
   return (
