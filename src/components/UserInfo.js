@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/button";
+import Button from "react-bootstrap/Button";
 
 const UserInfo = ({ users }) => {
   const { id } = useParams();
