@@ -5,15 +5,17 @@ import Button from "react-bootstrap/Button";
 
 const UserCard = ({ users = [] }) => {
   return (
+    // map() function used to iterate array and let you manipulate the items
     <div className="userCard">
       {users.map((user) => (
+        // Without the `key`, React will fire a key warning
         <Card key={user.id}>
           <div className="circle">
             <p>{user.name.charAt(0)}</p>
           </div>
           <Card.Body>
             <Card.Title>{user.name}</Card.Title>
-            <Card.Text>{user.username}</Card.Text>
+            <i>@{user.username}</i>
             <Card.Text>
               <a
                 href={`https://${user.website}`}

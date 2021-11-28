@@ -8,9 +8,11 @@ import UserCard from "./components/UserCard";
 import UserInfo from "./components/UserInfo";
 
 function App() {
+  //used to catch if error in loading data
   const [loading, setLoading] = useState(false);
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([]); //DATASET from api call
 
+  // Here useeffect is to run loadUsers after React has updated the DOM
   useEffect(() => {
     loadUsers();
   }, []);
@@ -18,7 +20,7 @@ function App() {
   const loadUsers = async () => {
     try {
       setLoading(true);
-      const res = await getUsers();
+      const res = await getUsers(); //get call from API
       setUsers(res.data);
       setLoading(false);
     } catch (error) {

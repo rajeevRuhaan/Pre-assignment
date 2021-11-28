@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
 const UserInfo = ({ users }) => {
-  const { id } = useParams();
+  const { id } = useParams(); //useParams used to remember the parameter we passed using links.
   const navigate = useNavigate();
 
   return (
