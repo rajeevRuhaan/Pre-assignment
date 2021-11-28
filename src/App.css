@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(201, 197, 197);
 }
 
 .userCard {
@@ -36,18 +37,31 @@
 .card-body button {
   width: 150px;
 }
-
+.user {
+  height: 90vh;
+}
 .userinfo {
   padding: 1rem;
   width: 500px;
   margin: 0 auto;
 }
+.userinfoButton {
+  padding: 20px;
+  margin-top: 2rem;
+}
+header {
+  background-color: red;
+  height: 50px;
+}
 
+header h3 {
+  margin-left: 40%;
+}
 .footer {
   background-color: darkgrey;
-  align-items: center;
 }
+
 .footer div {
   color: blue;
-  margin-left: 50%;
+  margin-left: 40%;
 }

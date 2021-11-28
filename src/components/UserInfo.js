@@ -8,7 +8,7 @@ const UserInfo = ({ users }) => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="user">
       <Card className="userinfo">
         <p>Name: {users[id - 1].name}</p>
         <p>User Name: {users[id - 1].username}</p>
@@ -24,13 +24,16 @@ const UserInfo = ({ users }) => {
         <li>City: {users[id - 1].address.city}</li>
         <li>Zipcode: {users[id - 1].address.zipcode}</li>
       </Card>
-      <Button
-        onClick={() => {
-          navigate("/");
-        }}
-      >
-        Back button
-      </Button>
+      <>
+        <Button
+          className="userinfoButton"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Back button
+        </Button>
+      </>
     </div>
   );
 };

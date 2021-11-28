@@ -33,7 +33,7 @@ function App() {
       {loading ? (
         <h1>loading</h1>
       ) : (
-        <div>
+        <div className="App">
           <Router>
             <Routes>
               <Route exact path="/" element={<UserCard users={users} />} />
