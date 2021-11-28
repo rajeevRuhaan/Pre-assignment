@@ -15,7 +15,13 @@ const UserCard = ({ users = [] }) => {
             <Card.Title>{user.name}</Card.Title>
             <Card.Text>{user.username}</Card.Text>
             <Card.Text>
-              <a href="">http://{user.website}</a>
+              <a
+                href={`https://${user.website}`}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                http://{user.website}
+              </a>
             </Card.Text>{" "}
             <Link to={`/${user.id}`}>
               {" "}

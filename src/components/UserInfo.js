@@ -15,7 +15,17 @@ const UserInfo = ({ users }) => {
         <p>E.mail: {users[id - 1].email}</p>
         <p>Phone: {users[id - 1].phone}</p>
         <p>Company: {users[id - 1].company.name}</p>
-        <p>Website: {users[id - 1].website}</p>
+        <p>
+          Website:
+          <a
+            href={`https://${users[id - 1].website}`}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            https://{users[id - 1].website}
+          </a>
+        </p>
         <p>
           <b>Address:</b>
         </p>
