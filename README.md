@@ -2,7 +2,7 @@
 
 ### Link:
 
-https://app.netlify.com/sites/zealous-minsky-cf0dc8/overview
+https://zealous-minsky-cf0dc8.netlify.app/
 
 ![Test Image 1](public/picture/pic1.png);
 ![Test Image 1](public/picture/pic2.png);
